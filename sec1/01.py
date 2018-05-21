@@ -1,7 +1,5 @@
 
-text="stressed"
+text="パタトクカシーー"
 
-for i in range(len(text)):
-    print(text[len(text)-i-1],end='')
-
-
+for i in range(0,len(text),2):
+    print(text[i],end='')

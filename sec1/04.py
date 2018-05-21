@@ -1,10 +1,6 @@
-import re
+text="Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can."
+order=[1, 5, 6, 7, 8, 9, 15, 16, 19]
 
-text="Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
-l=[]
-
-for s in re.split('\W',text):
-    if s =='': continue
-    print(s)
-    l.append(len(s))
-print(l)
+for num,elem in zip(range(len(text.split(' '))),text.split(' ')):
+    if num+1 in order:print(elem[0])
+    else:           print(elem[0:2])

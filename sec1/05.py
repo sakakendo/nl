@@ -1,6 +1,5 @@
-text="Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can."
-order=[1, 5, 6, 7, 8, 9, 15, 16, 19]
+text="I am an NLPer"
+words=text.split(' ')
 
-for num,elem in zip(range(len(text.split(' '))),text.split(' ')):
-    if num+1 in order:print(elem[0])
-    else:           print(elem[0:2])
+for i in range(1,len(words)):
+        print(words[i-1],words[i])

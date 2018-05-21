@@ -1,5 +1,5 @@
+text1="パトカー"
+text2="タクシー"
 
-text="パタトクカシーー"
-
-for i in range(0,len(text),2):
-    print(text[i],end='')
+for i in range(len(text1)):
+    print(text1[i]+text2[i],end="")
