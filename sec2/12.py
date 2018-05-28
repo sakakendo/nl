@@ -6,7 +6,6 @@ with open('hightemp.txt') as f:
             for line in texts:
                 col1.write(line.split('\t')[0]+'\n')
                 col2.write(line.split('\t')[1]+'\n')
-            
 
 #!cat hightemp.txt |cut -f 1
 #!cat hightemp.txt |cut -f 2
