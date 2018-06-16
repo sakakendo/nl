@@ -53,5 +53,17 @@ def exercises23():
     p=re.compile(r'''^(={2,})\s*(.+?)\s*\1.*$''',re.MULTILINE+re.VERBOSE)
     for line in p.findall(british):
         print(len(line[0])-1,line[1])
-exercises23()
+
+'''
+24. ファイル参照の抽出
+記事から参照されているメディアファイルをすべて抜き出せ．
+'''
+def exercises24():
+
+    british=exercises20()
+    p=re.compile(r'''(ファイル|File):(.+?)\|''',re.MULTILINE+re.VERBOSE)
+    for file in p.findall(british):
+        print(file[1])
+
+exercises24()
 
